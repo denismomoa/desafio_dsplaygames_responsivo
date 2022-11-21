@@ -1,0 +1,438 @@
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    --color-white: #fff;
+    --color-aqua-blue: #38AF90;
+    --color-dark-gray: #797979;
+    --color-light-gray: #F0F0F0;
+    --color-pink: #DD7E92;
+    --color-gray: #C4C4C4;
+    --color-darker-gray: #383838;
+}
+
+html, body{
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+.container{
+    width: 100%;
+    max-width: 990px;
+    margin: 0 auto;
+}
+
+.header-styles{
+    color: var(--color-white);
+    background-color: var(--color-aqua-blue);
+    padding-top: 22px;
+    padding-bottom: 21px;
+    box-shadow: 0px 5px 5px rgba(0,0,0,0.25);
+}
+
+.nav-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.nav-content h1{
+    font-size: 18px;
+}
+
+.nav-image{
+    display: flex;
+}
+
+.nav-image img{
+    width: 62px;
+    height: 62px;
+}
+
+.menu-items{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-right: 29px;
+}
+
+.menu-items a{
+    text-decoration: none;
+    font-size: 14px;
+    color: var(--color-white);
+}
+
+.menu-items li{
+    margin: 10px;
+}
+
+.news-title{
+    color: var(--color-dark-gray);
+    text-align: center;
+    font-size: 24px;
+    margin-top: 40px;
+    margin-bottom: 8px;
+}
+
+.news-align{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.news-card{
+    background-color: var(--color-light-gray);
+    border-radius: 8px;
+    padding: 12px;
+    margin-bottom: 28px;
+    box-shadow: 0px 5px 5px rgba(0,0,0,0.25);
+}
+
+.news-card h3{
+    color: var(--color-aqua-blue);
+    font-size: 16px;
+    margin: 0;
+}
+
+.news-card h4{
+    color: var(--color-dark-gray);
+    font-size: 12px;
+    margin: 0;
+    margin-top: 3px;
+    border-bottom: 1px solid var(--color-aqua-blue);
+}
+
+.news-card h6{
+    color: var(--color-aqua-blue);
+    font-size: 10px;
+    margin-top: 7px;
+    margin-bottom: 12px;
+    font-weight: lighter;
+}
+
+.news-content {
+    color: var(--color-dark-gray);
+    font-size: 10px;
+}
+
+.read-more{
+    color: var(--color-pink);
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.see-more{
+    background-color: var(--color-pink);
+    border-radius: 8px;
+    width: 244px;
+    height: 67px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.see-more p{
+    color: var(--color-white);
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+}
+
+.game-section{
+    background-color: var(--color-light-gray);
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.game-section h2{
+    color: var(--color-aqua-blue);
+    font-size: 24px;
+    text-align: center;
+    margin: 0;
+}
+
+.card-game{
+    display: flex;
+    flex-direction: column;
+    margin-top: 28px;
+    max-width: 300px;
+    background-color: var(--color-white);
+    border-radius: 8px;
+    box-shadow: 0px 5px 5px rgba(0,0,0,0.25);
+}
+
+.card-game-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-game img{
+    width: 100%;
+    height: 168px;
+    border-radius: 8px 8px 0px 0px;
+}
+
+.card-game h3{
+    color: var(--color-dark-gray);
+    text-align: center;
+    font-size: 18px;
+    margin: 0;
+    margin-top: 27px;
+}
+
+.game-description{
+    display: flex;
+    justify-content: center;
+}
+
+.game-description h4{
+    color: var(--color-aqua-blue);
+    font-size: 12px;
+    margin: 0;
+    margin-right: 4px;
+    
+}
+
+.game-description p{
+    color: var(--color-dark-gray);
+    font-size: 12px;
+    margin: 0 ;
+    
+}
+
+.card-game h5{
+    color: var(--color-aqua-blue);
+    text-align: center;
+    font-size: 36px;
+    margin: 0 auto;
+    padding-top: 13px;
+    padding-bottom: 15px;
+}
+
+.subscribe{
+    margin-left: 12px;
+    margin-right: 8px;
+}
+
+.subscribe-title{
+    color: var(--color-dark-gray);
+    text-align: center;
+    font-size: 24px;
+    margin-top: 40px;
+    margin-bottom: 16px;
+}
+
+.subscribe-card{
+    background-color: var(--color-light-gray);
+    max-width: 790px;
+    border-radius: 8px;
+    padding-top: 52px;
+    padding-left: 8px;
+    padding-bottom: 33px;
+    margin-bottom: 61px;
+    box-shadow: 0px 5px 5px rgba(0,0,0,0.25);
+}
+
+.subscribe-card form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subscribe-card form ::placeholder{
+    display: flex;
+    align-items: center;
+    color:var(--color-gray);
+    font-size: 16px;
+    padding-left: 22px;
+}
+
+.subscribe-card form input{
+    width: 100%;
+    max-width: 642px;
+    height: 50px;
+    border-radius: 4px;
+    border: 1px solid var(--color-dark-gray);
+    margin-bottom: 20px;
+    margin-right: 12px;
+}
+
+.platform{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    min-width: 300px;
+    font-size: 16px;
+    color: var(--color-dark-gray);
+}
+
+.novidades{
+    margin-top: 35px;
+}
+
+.send{
+    background-color: var(--color-pink);
+    border-radius: 8px;
+    width: 244px;
+    height: 67px;
+    margin: 0 auto;
+    margin-top: 47px;
+}
+
+.send p{
+    color: var(--color-white);
+    font-size: 18px;
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+    margin: 0;
+    
+}
+
+.clear{
+    background-color: var(--color-white);
+    border-radius: 8px;
+    width: 244px;
+    height: 67px;
+    margin: 0 auto;
+    border: 2px solid var(--color-pink);
+    margin-top: 20px;
+}
+
+.clear p{
+    color:var(--color-pink);
+    font-size: 18px;
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.footer-styles{
+    background-color: var(--color-darker-gray);
+    color: var(--color-white);
+}
+
+.footer-styles a{
+    text-decoration: none;
+    color: var(--color-white);
+}
+
+.footer-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-content p{
+    margin: 0 auto;
+    font-size: 14px;
+}
+
+.social-media{
+    margin-bottom: 37px;
+    margin-top: 28px;
+    text-align: center;
+}
+
+.rights{
+    margin-bottom: 37px;
+    text-align: center;
+}
+
+.politics{
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+@media(max-width: 768px) {
+    #menu{
+        display: none;
+    }
+}
+
+@media(min-width: 768px) {
+
+    .nav-content h1{
+        font-size: 24px;
+    }
+
+    .news-title{
+        font-size: 36px;
+        margin-bottom: 40px;
+    }
+
+    .news-card h3{
+        font-size: 24px;
+    }
+
+    .news-card h4{
+        font-size: 16px;
+    }
+
+    .game-section{
+        padding-top: 36px;
+        padding-bottom: 70px;
+    }
+
+    .game-section h2{
+        font-size: 36px;
+    }
+
+    .card-game{
+        margin-top: 73px;
+    }
+    
+    .subscribe-title{
+        font-size: 36px;
+        margin-bottom: 40px;
+    }
+
+    .platform{
+        margin-left: 72px;
+    }
+
+    .buttons-controller{
+        display: flex;
+    }
+
+    .send{
+        margin-right: 26px;
+        margin-top: 38px;
+        margin-bottom: 52px;
+    }
+
+    .clear{
+        margin-left: 26px;
+        margin-top: 38px;
+        margin-bottom: 52px;
+    }
+
+    .footer-content{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .social-media{
+        margin-bottom: 74px;
+        margin-top: 74px;
+        
+    }
+    
+    .rights{
+        margin-top: 84px;
+        margin-bottom: 85px;
+       
+    }
+    
+    .politics{
+        margin-top: 74px;
+        margin-bottom: 74px;
+    }
+}
